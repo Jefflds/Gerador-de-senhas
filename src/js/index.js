@@ -1,6 +1,6 @@
 const passwordLengthEl = document.querySelector('#password-lenght')
 const inputEL = document.querySelector('#password')
-const copyPasswordEl = document.querySelector('#copyPassword')
+
 let passwordLength = passwordLengthEl.getAttribute('value')
 
 function generatePassword(){
@@ -24,7 +24,8 @@ passwordLengthEl.addEventListener("input", function() {
     generatePassword()
 })
 
-copyPasswordEl.addEventListener('click', copyPassword)
+document.querySelector('#copyPassword').addEventListener('click', copyPassword)
+document.querySelector('#copy').addEventListener('click', copyPassword)
 
 
 generatePassword()

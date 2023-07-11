@@ -36,6 +36,8 @@ main {
   
 .password {
     display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 
 .password .text {
@@ -54,4 +56,16 @@ main {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.password .actions img {
+    width: 42px;
+}
+
+.password .actions button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
 }
